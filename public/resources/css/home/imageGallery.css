@@ -1,0 +1,13 @@
+#image-gallery {
+  width: 70%;
+  margin: 50px auto;
+}
+#image-gallery .features-header {
+  width: 60%;
+}
+.images-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}

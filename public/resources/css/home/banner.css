@@ -1,0 +1,25 @@
+#banner {
+  width: 100%;
+  padding: 30px;
+  background: linear-gradient(to right, #1b8be0, #00a3e0);
+  text-align: center;
+}
+.banner-content {
+  width: 60%;
+  margin: auto;
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+  font-size: 16px;
+}
+.learn-btn {
+  border: none;
+  background-color: white;
+  color: linear-gradient(to right, #1b8be0, #00a3e0);
+  padding: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  border-radius: 4px;
+  position: relative;
+  margin-left: 10px;
+  top: -2px;
+}

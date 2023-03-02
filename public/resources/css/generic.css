@@ -1,0 +1,95 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.dash {
+  margin: 30px 0px;
+}
+
+/* navigation bar styling starts*/
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+  background: #fff;
+  font-family: "Roboto", sans-serif;
+  position: fixed;
+  top: 0px;
+}
+.navbar__logo {
+  margin-left: 20px;
+}
+.navbar-right {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+.navbar__menu {
+  margin-right: 20px;
+}
+.navbar__menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.navbar__menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+.navbar__menu li a {
+  color: #000;
+  font-size: 14px;
+  line-height: 28px;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-decoration: none;
+}
+.navbar__search {
+  float: right;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+.navbar__search i {
+  font-size: 18px;
+  color: #000;
+}
+
+/* navigation bar styling ends */
+
+/* footer styling starts */
+.footer {
+  background-color: black;
+  padding: 0px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-logo {
+  margin-bottom: 20px;
+}
+
+.footer-text {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+}
+
+.footer-links a {
+  float: left;
+  text-decoration: none;
+  color: white;
+}
+
+/* footer styling ends */

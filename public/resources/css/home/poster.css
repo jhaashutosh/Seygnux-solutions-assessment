@@ -1,0 +1,65 @@
+.poster {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+  width: 100%;
+  min-height: 500px;
+}
+.background {
+  opacity: 70%;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-size: cover;
+  background-position: center;
+}
+.text-content {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  z-index: 3;
+  transform: translateY(-50%);
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+}
+.text-content h1 {
+  font-size: 50px;
+  width: 30%;
+}
+.text-content h2 {
+  font-size: 24px;
+  width: 30%;
+}
+
+/* second poster */
+#brands .poster {
+  position: relative;
+}
+.signatures {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+}
+.signatures p {
+  z-index: 3;
+  color: white;
+  margin-right: 50px;
+}
+
+.signatures p:nth-child(1) {
+  font-family: Arial;
+}
+
+.signatures p:nth-child(2) {
+  font-family: Times New Roman;
+}
+
+.signatures p:nth-child(3) {
+  font-family: Verdana;
+}
+
+.signatures p:nth-child(4) {
+  font-family: Courier New;
+}

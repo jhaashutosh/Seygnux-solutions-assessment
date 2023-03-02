@@ -1,0 +1,34 @@
+#features {
+  background-color: white;
+  width: 70%;
+  padding-bottom: 30px;
+  margin: 50px auto;
+}
+.features-header {
+  margin: 20px 0px;
+}
+.features-header h1 {
+  margin-bottom: 10px;
+}
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card {
+  width: 30%;
+}
+
+.card p {
+  text-align: justify;
+  margin: 20px 0px;
+}
+
+.button {
+  background-color: black;
+  color: white;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 12px;
+}
