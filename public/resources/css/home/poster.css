@@ -69,8 +69,15 @@
 .signatures p:nth-child(5) {
   font-family: var(--minor-font-1);
 }
-.signatures p:nth-child(6) {
-  font-family: var(--major-font-1);
+
+@media only screen and (min-width: 1190px) {
+  .text-content h1 {
+    font-size: 64px;
+  }
+  .text-content h2 {
+    font-size: 24px;
+    width: 45%;
+  }
 }
 
 @media only screen and (max-width: 767px) {
