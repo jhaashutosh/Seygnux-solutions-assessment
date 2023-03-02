@@ -1,0 +1,1 @@
+# segnux-solutions-assessment
