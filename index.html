@@ -17,7 +17,7 @@
 <body>
     <nav class="navbar">
         <div class="navbar__logo">
-            <a href=""><img src="logo.png" alt="logo"></a>
+            <a href=""><img src="./public/assets/images/logo.png" alt="logo"></a>
         </div>
         <div class="navbar-right">
             <div class="navbar__menu">
@@ -34,8 +34,22 @@
             </div>
         </div>
     </nav>
+
+    <div class="hamburger-menu">
+        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+        <ul class="menu">
+            <li><a href="">Sample</a></li>
+            <li><a href="">Features</a></li>
+            <li><a href="">Layouts</a></li>
+            <li><a href="">Our Shop</a></li>
+            <li><a href="">Buy Theme</a></li>
+        </ul>
+    </div>
     <div class="poster">
-        <img src="./public/assets/images/Screenshot (431).png" alt="background" class="background">
+        <img src="./public/assets/images/background.jpg" alt="background" class="background">
+        <div
+            style="position: absolute; top: 0; left: 0; background-color: black; width: 100%; height: 100%; opacity: 0.85;">
+        </div>
         <div class="text-content">
             <h1>We crush minimal designs.</h1>
             <h2>Monochrome is a creative agency based in Chicago. We developed the Genesis Framework and build
@@ -44,85 +58,97 @@
     </div>
     <section id="features">
         <div class="features-header">
-            <h1>Section Header</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <h1>We build experience</h1>
+            <p>A minimalist approach is the only way to design a website</p>
         </div>
-        <div class="dash">-</div>
+        <div class="dash">__</div>
         <div class="cards">
             <div class="card">
-                <h3>Card Header</h3>
+                <h3>Design</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                    laboris.</p>
+                    ut labore et dolore magna aliqua.</p>
                 <button class="button">Learn More</button>
             </div>
             <div class="card">
-                <h3>Card Header</h3>
+                <h3>Content</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                    laboris.</p>
+                    ut labore et dolore magna aliqua.</p>
                 <button class="button">Learn More</button>
             </div>
             <div class="card">
-                <h3>Card Header</h3>
+                <h3>Strategy</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                    laboris.</p>
+                    ut labore et dolore magna aliqua.</p>
                 <button class="button">Learn More</button>
             </div>
         </div>
     </section>
     <section id="brands">
         <div class="poster">
-            <img src="./public/assets/images/Screenshot (431).png" alt="background" class="background">
+            <img src="./public/assets/images/background.jpg" alt="background" class="background">
+            <div
+                style="position: absolute; top: 0; left: 0; background-color: black; width: 100%; height: 100%; opacity: 0.85;">
+            </div>
             <div class="text-content">
                 <h1>We crush minimal designs.</h1>
                 <h2>Monochrome is a creative agency based in Chicago. We developed the Genesis Framework and build
                     mobile-optimized themes for WordPress</h2>
-                <div class="dash">-</div>
+                <div class="dash">__</div>
                 <div class="signatures">
                     <p class="signature">Brand A</p>
-                    <p class="signature">Brand A</p>
-                    <p class="signature">Brand A</p>
-                    <p class="signature">Brand A</p>
+                    <p class="signature">Brand B</p>
+                    <p class="signature">Brand C</p>
+                    <p class="signature">Brand D</p>
+                    <p class="signature">Brand E</p>
+                    <p class="signature">Brand F</p>
                 </div>
             </div>
         </div>
     </section>
     <section id="image-gallery">
         <div class="features-header">
-            <h1>Section Header</h1>
-            <p>Lorem ipsum dolor sit amet</p>
+            <h1>We create stories</h1>
+            <p>A killer narrative will turn your readers into raving fans</p>
         </div>
-        <div class="dash">-</div>
+        <div class="dash">__</div>
         <div class="images-section">
-            <div>
-                <img src="img1.jpg">
-                <h3>Image 1</h3>
-                <span>Name, Date</span>
+            <div class="image-container">
+                <div class="image-card">
+                    <div class="image-card__images">
+                        <img src="/public/assets/images/image-card__1.jpg">
+                    </div>
+                    <h3>Image 1</h3>
+                    <span>Name, Date</span>
+                </div>
+                <div class="image-card">
+                    <div class="image-card__images">
+                        <img src="/public/assets/images/image-card__2.jpg">
+                    </div>
+                    <h3>Image 2</h3>
+                    <span>Name, Date</span>
+                </div>
             </div>
-            <div>
-                <img src="img2.jpg">
-                <h3>Image 2</h3>
-                <span>Name, Date</span>
-            </div>
-            <div>
-                <img src="img3.jpg">
-                <h3>Image 3</h3>
-                <span>Name, Date</span>
-            </div>
-            <div>
-                <img src="img4.jpg">
-                <h3>Image 4</h3>
-                <span>Name, Date</span>
+            <div class="image-container">
+                <div class="image-card">
+                    <div class="image-card__images">
+                        <img src="/public/assets/images/image-card__3.jpg">
+                    </div>
+                    <h3>Image 3</h3>
+                    <span>Name, Date</span>
+                </div>
+                <div class="image-card">
+                    <div class="image-card__images">
+                        <img src="/public/assets/images/image-card__4.jpg">
+                    </div>
+                    <h3>Image 4</h3>
+                    <span>Name, Date</span>
+                </div>
             </div>
         </div>
     </section>
     <section id="banner">
         <div class="banner-content">
-            Hit the ground with minimalistic look.
+            <span>Hit the ground with minimalistic look.</span>
             <button class="learn-btn">Learn More</button>
         </div>
     </section>
@@ -130,20 +156,21 @@
     <footer class="footer">
 
         <div class="footer-logo">
-            <img src="logo.png" alt="Company Logo" />
+            <img src="./public/assets/images/logo.png" alt="Company Logo" />
         </div>
 
         <div class="footer-text">
-            Footer Content
+            Handcrafter with <i class="fa fa-heart"></i> in Chicago . Powered byStudioPress
         </div>
 
         <div class="footer-links">
-            <a href="facebook.com">Facebook</a>
-            <a href="twitter.com">Twitter</a>
-            <a href="instagram.com">Instagram</a>
+            <a href="https://facebook.com">Facebook</a>
+            <a href="https://twitter.com">Twitter</a>
+            <a href="https://instagram.com">Instagram</a>
         </div>
 
     </footer>
+    <script src="./public/resources/js/ham.js"></script>
 
 </body>
 

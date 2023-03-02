@@ -1,13 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;700&family=Open+Sans:wght@300;400;700&family=Rubik&family=Tilt+Neon&display=swap");
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
 .dash {
-  margin: 30px 0px;
+  margin-top: 28px;
+  margin-bottom: 32px;
+}
+
+:root {
+  --major-font-1: "Roboto", sans-serif;
+  --major-font-2: "Rubik";
+  --minor-font-1: "Golos Text";
 }
 
 /* navigation bar styling starts*/
+
+.hamburger-menu {
+  display: none;
+}
 
 .navbar {
   display: flex;
@@ -16,12 +28,18 @@
   padding: 10px;
   width: 100%;
   background: #fff;
-  font-family: "Roboto", sans-serif;
+  font-family: var(--major-font-1);
   position: fixed;
   top: 0px;
+  z-index: 10;
 }
 .navbar__logo {
-  margin-left: 20px;
+  margin-left: 10px;
+  width: 50px;
+  height: auto;
+}
+.navbar__logo img {
+  width: 100%;
 }
 .navbar-right {
   display: flex;
@@ -39,6 +57,7 @@
 .navbar__menu li {
   display: inline-block;
   margin-left: 20px;
+  cursor: pointer;
 }
 .navbar__menu li a {
   color: #000;
@@ -52,18 +71,78 @@
   float: right;
   margin-top: 5px;
   margin-right: 10px;
+  cursor: pointer;
 }
 .navbar__search i {
   font-size: 18px;
   color: #000;
 }
 
+/* Hamburger menu starts */
+@media only screen and (max-width: 767px) {
+  .navbar {
+    display: none;
+  }
+  .hamburger-menu {
+    display: block;
+    position: relative;
+    position: fixed;
+    top: 0px;
+    z-index: 100;
+    width: 100%;
+    background-color: #ffffff;
+  }
+  .hamburger-menu i {
+    cursor: pointer;
+    margin: 10px;
+  }
+  .hamburger-menu ul {
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  .hamburger-menu ul li {
+    padding: 16px;
+  }
+  .hamburger-menu ul li a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    font-family: var(--major-font-2);
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .hamburger-menu.active ul {
+    display: block;
+    margin-top: 30px;
+    animation: menu-open 0.2s ease-out;
+    background-color: white;
+    z-index: 12;
+  }
+  @keyframes menu-open {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+/* hamburger menu ends  */
 /* navigation bar styling ends */
 
 /* footer styling starts */
 .footer {
   background-color: black;
-  padding: 0px 0px;
+  padding: 50px 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -71,25 +150,52 @@
 }
 
 .footer-logo {
-  margin-bottom: 20px;
+  margin: 20px 0px;
+  width: 40px;
+  height: auto;
+}
+
+.footer-logo img {
+  width: 100%;
+  object-fit: cover;
 }
 
 .footer-text {
   font-size: 14px;
   margin-bottom: 20px;
   color: white;
+  font-family: var(--minor-font-1);
 }
 
 .footer-links {
   display: flex;
   justify-content: space-between;
   width: 20%;
+  font-family: var(--minor-font-1);
+  cursor: pointer;
 }
 
 .footer-links a {
   float: left;
   text-decoration: none;
   color: white;
+}
+@media only screen and (max-width: 600px) {
+  .footer-links {
+    justify-content: center;
+    width: 100%;
+  }
+  .footer-links a {
+    margin: 0px 10px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .footer-text {
+    font-size: 10px;
+  }
+  .footer-links a {
+    font-size: 10px;
+  }
 }
 
 /* footer styling ends */

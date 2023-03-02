@@ -1,14 +1,15 @@
 .poster {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   margin-top: 50px;
   width: 100%;
-  min-height: 500px;
 }
 .background {
-  opacity: 70%;
+  position: relative;
+  opacity: 50%;
   width: 100%;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   background-size: cover;
@@ -24,12 +25,15 @@
   font-family: "Roboto", sans-serif;
 }
 .text-content h1 {
-  font-size: 50px;
+  font-size: 45px;
   width: 30%;
+  font-family: var(--minor-font-1);
 }
 .text-content h2 {
-  font-size: 24px;
-  width: 30%;
+  font-size: 15px;
+  width: 45%;
+  margin-top: 10px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 /* second poster */
@@ -45,7 +49,6 @@
 .signatures p {
   z-index: 3;
   color: white;
-  margin-right: 50px;
 }
 
 .signatures p:nth-child(1) {
@@ -62,4 +65,58 @@
 
 .signatures p:nth-child(4) {
   font-family: Courier New;
+}
+.signatures p:nth-child(5) {
+  font-family: var(--minor-font-1);
+}
+.signatures p:nth-child(6) {
+  font-family: var(--major-font-1);
+}
+
+@media only screen and (max-width: 767px) {
+  .text-content h1 {
+    font-size: 36px;
+  }
+  .text-content h2 {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .text-content h1 {
+    font-size: 32px;
+    width: 45%;
+  }
+  .text-content h2 {
+    font-size: 12px;
+  }
+  .signatures {
+    font-size: 12px;
+  }
+  .dash {
+    margin-top: 8px;
+    margin-bottom: 24px;
+  }
+  .signatures {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .text-content h1 {
+    width: 90%;
+  }
+  .text-content h2 {
+    width: 80%;
+  }
+  .signatures {
+    width: 90%;
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .text-content h1 {
+    font-size: 18px;
+  }
+  .text-content h2 {
+    font-size: 12px;
+  }
 }
